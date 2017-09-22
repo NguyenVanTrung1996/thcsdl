@@ -1,46 +1,32 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>HUST UNIVERSITY</title>
-<!-- Custom Theme files -->
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="Food Court Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
-	SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola web design" />
-<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-<!-- //Custom Theme files -->
-<link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
-<link href="css/style.css" type="text/css" rel="stylesheet" media="all">
-<link rel="stylesheet" href="css/swipebox.css">
-<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all" />
-<!-- Font-Awesome-Icons-File -->
-	<link href='fonts/fontawesome-webfont.ttf' rel='stylesheet' type='text/css'>
-<!-- //Font-Awesome-Icons-File -->
-<!-- js -->
-<script src="js/jquery-1.11.1.min.js"></script> 
-<!-- //js -->
-<!--web-fonts-->
-<link href='//fonts.googleapis.com/css?family=Roboto+Condensed:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
-<link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-<link href='//fonts.googleapis.com/css?family=Tangerine:400,700' rel='stylesheet' type='text/css'>
-<!--//web-fonts-->
-<!-- start-smooth-scrolling-->
-<script type="text/javascript" src="js/move-top.js"></script>
-<script type="text/javascript" src="js/easing.js"></script>	
-<script type="text/javascript">
+	<title>
+	HUST UNIVERSITY
+	</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+	<link href="bower/bootstrap/dist/css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+	<link href="css/home.css" type="text/css" rel="stylesheet" media="all">
+	<link rel="stylesheet" href="bower/swipebox/src/css/swipebox.css">
+	<link href="bower/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all" />
+	<link href='bower/font-awesome/fonts/fontawesome-webfont.ttf' rel='stylesheet' type='text/css'>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY=AIzaSyAhqFfXMBh5IszGGWrSCQuzddaVv5bF1cs&callback=initMap"
+  	type="text/javascript"></script>
+	<script src="js/jquery-1.11.1.min.js"></script> 
+	<script type="text/javascript" src="js/move-top.js"></script>
+	<script type="text/javascript" src="bower/easing/easing.js"></script>	
+	<script type="text/javascript">
 		jQuery(document).ready(function($) {
 			$(".scroll").click(function(event){		
 				event.preventDefault();
-		
-		$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+
+				$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
 			});
 		});
-</script>
-<!--//end-smooth-scrolling-->	
+	</script>
 </head>
 <body>
-	<!---728x90--->
-	<!--banner-->
 	<div class="banner">		
 		<!--header-->
 		<div class="header">
@@ -50,8 +36,8 @@
 				</div> 
 				<div class="header-right">	
 					<ul>
-						<li><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>+00 111 222 3333</li>
-						<li><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span><a href="mailto:example@mail.com">mail@example.com</a></li>
+						<li><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>+84 984 121 314</li>
+						<li><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span><a href="">oder_food_and_drink@gmail.com</a></li>
 					</ul>
 				</div>
 				<div class="clearfix"> </div>
@@ -59,19 +45,18 @@
 		</div>
 		<div class="banner-text agileits">
 			<!-- banner Slider starts Here -->
-			<script src="js/responsiveslides.min.js"></script>
+			<script src="bower/ResponsiveSlides/responsiveslides.min.js"></script>
 			<script>
 				// You can also use "$(window).load(function() {"
-					$(function () {
-					// Slideshow 3
-						$("#slider3").responsiveSlides({
+				$(function () {
+					$("#slider3").responsiveSlides({
 						auto: false,
 						pager:true,
 						nav:true,
 						speed: 500,
 						namespace: "callbacks",
 						before: function () {
-						$('.events').append("");
+							$('.events').append("");
 						},
 						after: function () {
 							$('.events').append("");
@@ -83,42 +68,34 @@
 			<div  id="top" class="callbacks_container">
 				<ul class="rslides" id="slider3">
 					<li>					
-						<h2>TINCIDUNTLY LOREM SEDVELIT </h2>
-					</li>
-					<li>					
-						<h3 class="bh">LOREM IS SIMPLY DUMMY</h3>
-					</li>
-					<li>					
-						<h3 class="bh">VESTIBUL ULI CONSETUR</h3>
-				
-					</li>	
-					<li>					
-						<h3 class="bh">BONORUM ET MALORUM </h3>
-						
-					</li>						
+						<h2 class = "fix-font">Hust Food And Drink Order</h2>
+						<div class="col-lg-12 col-sm-12 col-xs-12  text-center button-product">
+			                <a class="btn btn-readmore" href="#" role="button"><h4>ĐĂNG NHẬP</h4></a>
+			            </div>
+					</li>					
 				</ul>
 			</div>
 		</div>
 		<div class="top-nav">
-		<nav class="navbar navbar-default">
-			<div class="container">
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">Menu						
-				</button>
-				<!-- Collect the nav links, forms, and other content for toggling -->
-				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-					<ul class="nav navbar-nav">
-						<li class="hvr-bounce-to-bottom active"><a href="index.html">Home</a></li>
-						<li class="hvr-bounce-to-bottom"><a href="#about" class="scroll">About</a></li>
-						<li class="hvr-bounce-to-bottom"><a href="#services" class="scroll">Services</a></li>
-						<li class="hvr-bounce-to-bottom"><a href="#portfolio" class="scroll">Portfolio</a></li>
-						<li class="hvr-bounce-to-bottom"><a href="#events" class="scroll">Events</a></li>
-						<li class="hvr-bounce-to-bottom"><a href="#contact" class="scroll">Contact Us</a></li>
-					</ul>	
-					<div class="clearfix"> </div>
-				</div>	
-			</div>
-		</nav>		
-	</div>	
+			<nav class="navbar navbar-default">
+				<div class="container">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">Menu						
+					</button>
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<ul class="nav navbar-nav">
+							<li class="hvr-bounce-to-bottom active"><a href="index.html">Home</a></li>
+							<li class="hvr-bounce-to-bottom"><a href="#about" class="scroll">About</a></li>
+							<li class="hvr-bounce-to-bottom"><a href="#services" class="scroll">Services</a></li>
+							<li class="hvr-bounce-to-bottom"><a href="#portfolio" class="scroll">Portfolio</a></li>
+							<li class="hvr-bounce-to-bottom"><a href="#events" class="scroll">Events</a></li>
+							<li class="hvr-bounce-to-bottom"><a href="#contact" class="scroll">Contact Us</a></li>
+						</ul>	
+						<div class="clearfix"> </div>
+					</div>	
+				</div>
+			</nav>		
+		</div>	
 	</div>
 	
 	<!--//banner-->
@@ -128,48 +105,48 @@
 		<div class="container">
 			<h3 class="title">About</h3>
 			<h6>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</h6>
-				<div class="col-md-6 col-sm-6 about-grids about-top-left">
-					<div class="col-md-10 col-sm-10 about-text about-text1">
-						<h4>Combined with a handful</h4>
-						<p>A elementum ligula lacus ac quam ultrices a scelerisque praesent vel suspendisse scelerisque a aenean hac montes.</p>
-					</div>
-					<div class="col-md-2 col-sm-2 about-icon">
-						<i class="fa fa-link" aria-hidden="true"></i>
-					</div>
-					<div class="clearfix"></div>
+			<div class="col-md-6 col-sm-6 about-grids about-top-left">
+				<div class="col-md-10 col-sm-10 about-text about-text1">
+					<h4>Combined with a handful</h4>
+					<p>A elementum ligula lacus ac quam ultrices a scelerisque praesent vel suspendisse scelerisque a aenean hac montes.</p>
 				</div>
-				<div class="col-md-6 col-sm-6 about-grids about-top-right">
-					<div class="col-md-2 col-sm-2 about-icon">
-						<i class="fa fa-cog" aria-hidden="true"></i>
-					</div>
-					<div class="col-md-10 col-sm-10 about-text about-text2">
-						<h4>The standard chunk</h4>
-						<p>A elementum ligula lacus ac quam ultrices a scelerisque praesent vel suspendisse scelerisque a aenean hac montes.</p>
-					</div>
-					<div class="clearfix"></div>
+				<div class="col-md-2 col-sm-2 about-icon">
+					<i class="fa fa-link" aria-hidden="true"></i>
 				</div>
 				<div class="clearfix"></div>
-				<div class="col-md-6 col-sm-6 about-grids about-btm-left">
-					<div class="col-md-10 col-sm-10 about-text about-text3">
-						<h4> Letraset sheets lorem</h4>
-						<p>A elementum ligula lacus ac quam ultrices a scelerisque praesent vel suspendisse scelerisque a aenean hac montes.</p>
-					</div>
-					<div class="col-md-2 col-sm-2 about-icon">
-						<i class="fa fa-hourglass-o" aria-hidden="true"></i>
-					</div>
-					<div class="clearfix"></div>
+			</div>
+			<div class="col-md-6 col-sm-6 about-grids about-top-right">
+				<div class="col-md-2 col-sm-2 about-icon">
+					<i class="fa fa-cog" aria-hidden="true"></i>
 				</div>
-				<div class="col-md-6 col-sm-6 about-grids about-btm-right">
-					<div class="col-md-2 col-sm-2 about-icon">
-						<i class="fa fa-paper-plane-o" aria-hidden="true"></i>
-					</div>
-					<div class="col-md-10 col-sm-10 about-text about-text4">
-						<h4>Contrary to belief</h4>
-						<p>A elementum ligula lacus ac quam ultrices a scelerisque praesent vel suspendisse scelerisque a aenean hac montes.</p>
-					</div>
-					<div class="clearfix"></div>
+				<div class="col-md-10 col-sm-10 about-text about-text2">
+					<h4>The standard chunk</h4>
+					<p>A elementum ligula lacus ac quam ultrices a scelerisque praesent vel suspendisse scelerisque a aenean hac montes.</p>
 				</div>
 				<div class="clearfix"></div>
+			</div>
+			<div class="clearfix"></div>
+			<div class="col-md-6 col-sm-6 about-grids about-btm-left">
+				<div class="col-md-10 col-sm-10 about-text about-text3">
+					<h4> Letraset sheets lorem</h4>
+					<p>A elementum ligula lacus ac quam ultrices a scelerisque praesent vel suspendisse scelerisque a aenean hac montes.</p>
+				</div>
+				<div class="col-md-2 col-sm-2 about-icon">
+					<i class="fa fa-hourglass-o" aria-hidden="true"></i>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			<div class="col-md-6 col-sm-6 about-grids about-btm-right">
+				<div class="col-md-2 col-sm-2 about-icon">
+					<i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+				</div>
+				<div class="col-md-10 col-sm-10 about-text about-text4">
+					<h4>Contrary to belief</h4>
+					<p>A elementum ligula lacus ac quam ultrices a scelerisque praesent vel suspendisse scelerisque a aenean hac montes.</p>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			<div class="clearfix"></div>
 		</div>
 	</div>
 	<!--//about-->
@@ -459,7 +436,7 @@
 					</div>
 					<div class="tab-1 resp-tab-content">
 						<div class="tab_img">
-						<div class="col-md-2 portfolio-grids grid">
+							<div class="col-md-2 portfolio-grids grid">
 								<div class="hover ehover14">
 									<a href="images/g7.jpg" class="swipebox" title="Consectetur adipiscing elit. Duis maximus tortor diam, Lorem ipsum dolor sit amet, ac lobortis justo rutrum quis. Praesent non purus fermentum, eleifend velit non">
 										<img src="images/g7.jpg" alt="" class="img-responsive" />
@@ -619,11 +596,11 @@
 			</script>
 			<!--//ResponsiveTabs-->
 			<!-- swipe box js -->
-			<script src="js/jquery.swipebox.min.js"></script> 
+			<script src="bower/swipebox/src/js/jquery.swipebox.min.js"></script> 
 			<script type="text/javascript">
-					jQuery(function($) {
-						$(".swipebox").swipebox();
-					});
+				jQuery(function($) {
+					$(".swipebox").swipebox();
+				});
 			</script>
 			<!-- //swipe box js -->
 		</div>
@@ -633,15 +610,15 @@
 	<!--events-->
 	<div class="events" id="events">
 		<div class="container">
-		<h3 class="title">Events & News</h3>
-		<h6>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</h6>
+			<h3 class="title">Events & News</h3>
+			<h6>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</h6>
 			<div class="col-md-6 col-sm-6 events-left">
 				<a href="#" data-toggle="modal" data-target="#mymodal" class="spcl"><img src="images/event2.jpg" alt=" " /></a>
 				<a href="#" data-toggle="modal" data-target="#mymodal" class="spcl"><h4>Maecenas magna turpis, auctor sed ante eu, laoreet ullamcorper.</h4></a>
 				<h5>21/4/2016</h5>
 				<p>Phasellus a velit pellentesque, convallis mauris vitae, porttitor turpis. Morbi quis leo erat. Vivamus fermentum blandit lectus, ut tempor nisi sodales ac. Quisque lobortis, metus nec vulputate consectetur, enim neque ullamcorper erat, in tempor urna turpis sed ex</p>
-					<a href="#" data-toggle="modal" data-target="#mymodal" class="hvr-radial-out event-read">READ MORE</a>
-					<div class="modal fade features-modal" id="mymodal" tabindex="-1" role="dialog" aria-hidden="true">
+				<a href="#" data-toggle="modal" data-target="#mymodal" class="hvr-radial-out event-read">READ MORE</a>
+				<div class="modal fade features-modal" id="mymodal" tabindex="-1" role="dialog" aria-hidden="true">
 					<div class="modal-dialog modal-lg">
 						<div class="modal-content">
 							<div class="modal-header">
@@ -701,7 +678,8 @@
 
 	<!--map-->
 	<div class="map">
-		<iframe data-wow-delay=".5s" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.9503398796587!2d-73.9940307!3d40.719109700000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a27e2f24131%3A0x64ffc98d24069f02!2sCANADA!5e0!3m2!1sen!2sin!4v1441710758555"></iframe>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.675941241996!2d105.84115881429742!3d21.00562329394505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ac76ccab6dd7%3A0x55e92a5b07a97d03!2sHanoi+University+of+Science+and+Technology!5e0!3m2!1sen!2sin!4v1506065390576"></iframe>
+		</iframe>
 	</div>
 	<!--//map-->
 	<!--contact-->
@@ -760,15 +738,6 @@
 			</div>
 		</div>
 	</div>
-	<!--//contact-->
-	<!--footer-->
-	<div class="footer">
-		<div class="container">			
-			<p>© 2016 Food Court . All rights reserved | Design by <a href="http://w3layouts.com/"> W3layouts</a></p>
-		</div>	
-	</div>
-	<!--//footer-->
-	<!--smooth-scrolling-of-move-up-->
 	<script type="text/javascript">
 		$(document).ready(function() {
 			/*
@@ -786,8 +755,8 @@
 	</script>
 	<!--//smooth-scrolling-of-move-up-->
 	<!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="js/bootstrap.js"></script>
+	================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script src="bower/bootstrap/dist/js/bootstrap.js"></script>
 </body>
 </html>

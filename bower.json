@@ -14,5 +14,13 @@
     "public/bower",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "font-awesome": "Font-Awesome#^4.7.0",
+    "swipebox": "^1.4.4",
+    "jQuery": "^3.2.1",
+    "easing": "*",
+    "ResponsiveSlides": "*"
+  }
 }
