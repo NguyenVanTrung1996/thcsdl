@@ -87,6 +87,7 @@ font-family: 'Abril Fatface', cursive;
 }
 .fix-font {
     font-family: 'Abril Fatface', cursive;
+    text-shadow: 2px 2px 8px #fff;
 }
 .header-right ul li {
 display: inline-block;
@@ -1761,4 +1762,10 @@ a.btn.btn-readmore:hover {
     height: 40px;
     background-color: #f96c6c;
     color: #fff;
+}
+
+.btn-readmore h4 {
+	padding-top: 3px;
+	text-decoration: none;
+	text-transform: uppercase;
 }

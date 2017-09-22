@@ -12,8 +12,9 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
-});
-Route::get('/home', function () {
     return view('home');
+});
+
+Route::group(['prefix' => 'sites', 'as' => 'sites.'], function () {
+    Route::get('login','MyController@login');
 });

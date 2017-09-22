@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Login</title>
+	<!-- Latest compiled and minified CSS & JS -->
+	<link rel="stylesheet" type="text/css" href={{ asset('bower/bootstrap/dist/css/bootstrap.min.css')}}>
+	<script src="../bower/jquery/dist/jquery.js"></script>
+	<script src="../bower/bootstrap/dist/js/bootstrap.min.js" type="text/javascript" charset="utf-8" async defer></script>
+	<link href="../bower/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all" />
+	<link rel="stylesheet" type="text/css" href={{ asset('css/sites/login.css') }}>
+</head>
+<body>
+	<div class="container-fluid header-index">
+		<div class="col-md-2">
+			<a href="" title="" >
+				<img src="../images/sites/logo.png" class="logo-size-fixed"  alt="">
+			</a>
+		</div>
+		<div class="col-md-1 col-md-offset-8">
+			<a href="http://localhost:8000" title="">
+				<i class="fa fa-reply fa-3x" aria-hidden="true" style="color:#fff"></i>
+			</a>
+		</div>
+		<div class="col-md-1 sign-in">
+				<a href="" title="" >
+					<h5><span><b>Đăng Ký</b></span></h5>
+				</a>        
+		</div>
+	</div>
+	<div class="container-fluid">
+		<div class="container">
+			<div class="row">
+				<h1 class="text-center title">Đăng nhập</h1>
+			</div>
+			<div class="row">
+				<div class="col-lg-offset-3 col-lg-6 form-sign">
+					<div class="login-with-framgia text-center">
+						<a href="" title="">
+							<span class="name"><b>Đăng nhập với tài khoản Facebook</b></span>
+						</a>        
+					</div>
+					<form class="new_user" id="new_user" action="/users/sign_in" accept-charset="UTF-8" method="post">
+						<div class="field">
+							<label for="user_Email">Email</label><br />
+							<input autofocus="autofocus" class="form-control" type="email" value="" name="user[email]" id="user_email" />
+						</div>
+
+						<div class="field">
+							<label for="user_Mật khẩu">Mật khẩu</label><br />
+							<input autocomplete="off" class="form-control" type="password" name="user[password]" id="user_password" />
+						</div>
+
+						<div class="field">
+							<input name="user[remember_me]" type="hidden" value="0" /><input type="checkbox" value="1" name="user[remember_me]" id="user_remember_me" />
+							<label for="user_Ghi nhớ đăng nhâp">Ghi nhớ đăng nhâp</label>
+						</div>
+
+						<div class="actions text-center">
+							<input type="submit" name="commit" value="Đăng nhập" class="btn btn-default btn-sign"/>
+						</div>
+					</form> 
+					<a href="/users/password/new">Quên mật khẩu</a><br />
+				</div>
+			</div>  
+		</div>
+	</div>	
+	<footer class="footer-index">
+		<div class="row footer-index-1">
+			<div class="col-md-4">
+				<h2 class="footer-color"><i>Order Food And Drink</i></h2>
+			</div>
+			<div class="col-md-4">
+				<h4 class="footer-color-1"><i class="fa fa-map-marker" aria-hidden="true"></i> <span style="padding-left: 20px">So 1 Ta Quang Buu, Hai Ba Trung , Ha Noi . </span></h4>
+				<h4 class="footer-color-1"><i class="fa fa-phone" aria-hidden="true"></i><span style="padding-left: 19px">+84 984 123 456.</span></h4>
+				<h4 class="footer-color-1"><i class="fa fa-envelope-open" aria-hidden="true"></i> <span style="padding-left: 13px">order_food_and_drink@gmail.com.</span></h4>
+			</div>
+			<div class="col-md-4">
+				<h4>
+					<i style="color: #fff">"Mọi hạnh phúc trên đời đều xuất phát từ một bữa sáng nhàn nhã." - John Gunther
+				</i>
+				</h4>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

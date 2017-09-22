@@ -1,0 +1,84 @@
+.header-index, .footer-index {
+	background: url(../../images/sites/header_bg.png) #ff5722;
+}
+
+.logo-size-fixed {
+	max-width: 135px;
+	max-height: 35px;
+	margin:6px;
+}
+
+.title {
+	font-size:50px;
+	font-weight: 300px;
+	padding: 40px 0px;
+}
+
+.form-sign {
+	border: 1px solid #b5b5b5;
+	padding:20px;
+	background-color: #f7f7f7;
+	box-shadow: 2px 5px 5px -3px #333;
+}
+
+.login-with-framgia a {
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.btn-sign {
+	box-shadow: 1px 3px 5px -2px #464545;
+}
+
+.login-with-framgia {
+    border: 1px solid #e85425;
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #e85425;
+    box-shadow: 2px 6px 5px -3px #8a0505;
+}
+
+.login-with-framgia a {
+	color: #fff;
+}
+
+.login-with-framgia:hover {
+    border: 1px solid #f73f04;
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #f73f04;
+    box-shadow: 2px 6px 5px -3px #8a0505;
+}
+
+.footer-index {
+	margin-top: 100px;
+}
+
+.footer-color, .footer-color-1 {
+	color: white;
+	font-family: Abril Fatface;
+	font-weight: 600px;
+	margin-left: 37px;
+}
+
+.footer-color i {
+	text-shadow: 3px 6px 0px #f78888;
+}
+
+.footer-index-1 {
+	padding: 10px 0px;
+}
+
+.sign-in a {
+	color: #fff;
+	font-weight: 300px;
+	text-decoration: none;
+	text-transform: uppercase;
+	margin-top: 10px;
+}
+
+.sign-in {
+	margin-top:5px;
+}

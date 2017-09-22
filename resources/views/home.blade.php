@@ -70,7 +70,7 @@
 					<li>					
 						<h2 class = "fix-font">Hust Food And Drink Order</h2>
 						<div class="col-lg-12 col-sm-12 col-xs-12  text-center button-product">
-			                <a class="btn btn-readmore" href="#" role="button"><h4>ĐĂNG NHẬP</h4></a>
+			                <a class="btn btn-readmore" href="http://localhost:8000/sites/login" role="button"><h4>ĐĂNG NHẬP</h4></a>
 			            </div>
 					</li>					
 				</ul>
@@ -709,8 +709,8 @@
 							<i class="fa fa-map-marker" aria-hidden="true"></i>
 						</div>
 						<div class="col-md-11 col-sm-11 contact-text">
-							<h5>Broome St</h5>
-							<h5>Canada, NY 10002, USA</h5>
+							<h5>So 1</h5>
+							<h5>Ta Quang Buu </h5>
 						</div>
 						<div class="clearfix"></div>
 					</div>
@@ -719,8 +719,8 @@
 							<i class="fa fa-mobile" aria-hidden="true"></i>
 						</div>
 						<div class="col-md-11 col-sm-11 contact-text">
-							<h5> +00 111 222 3333</h5>
-							<h5> +1 888 888 4444</h5>
+							<h5> 0240 123 535</h5>
+							<h5> +84945 124 434</h5>
 						</div>
 						<div class="clearfix"></div>
 					</div>
@@ -729,7 +729,7 @@
 							<i class="fa fa-envelope" aria-hidden="true"></i>
 						</div>
 						<div class="col-md-11 col-sm-11 contact-text">
-							<h5><a href="mailto:example@mail.com">mail@example.com</a></h5>
+							<h5><a href="#">order_food_and_drink@gmail.com</a></h5>
 						</div>
 						<div class="clearfix"></div>
 					</div>
