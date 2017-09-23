@@ -21,6 +21,8 @@
     "swipebox": "^1.4.4",
     "jQuery": "^3.2.1",
     "easing": "*",
-    "ResponsiveSlides": "*"
+    "ResponsiveSlides": "*",
+    "vue": "^2.4.4",
+    "axios": "^0.16.2"
   }
 }
