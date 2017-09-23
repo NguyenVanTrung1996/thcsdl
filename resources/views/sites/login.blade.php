@@ -43,15 +43,15 @@
                                 <span class="name"><b>Đăng nhập với tài khoản Facebook</b></span>
                             </a>        
                         </div>
-                        <form class="new_user" id="new_user" action="/users/sign_in" accept-charset="UTF-8" method="post">
+                        <form class="new_user" id="new_user" action="home" accept-charset="UTF-8" method="post">
                             <div class="field">
-                                <label for="user_Email">Email</label><br />
-                                <input autofocus="autofocus" class="form-control" type="email" value="" name="user[email]" id="user_email" />
+                                <label>Email</label><br />
+                                <input class="form-control" type="email" name="email_dangnhap"/>
                             </div>
 
                             <div class="field">
-                                <label for="user_Mật khẩu">Mật khẩu</label><br />
-                                <input autocomplete="off" class="form-control" type="password" name="user[password]" id="user_password" />
+                                <label>Mật khẩu</label><br />
+                                <input class="form-control" type="password" name="password_dangnhap"/>
                             </div>
 
                             <div class="field">
@@ -80,23 +80,28 @@
                         </div>
                         <form class="new_user" id="new_user" action="/users/sign_in" accept-charset="UTF-8" method="post">
                             <div class="field">
-                                <label for="user_Email">Email</label><br />
-                                <input autofocus="autofocus" class="form-control" type="email" value="" name="email_dangky" id="" />
+                                <label>Email</label><br />
+                                <input class="form-control" type="email" name="email_dangky" />
                             </div>
 
                             <div class="field">
-                                <label for="user_Email">Phone</label><br />
-                                <input autofocus="autofocus" class="form-control" type="email" value="" name="phone_dangky" id="" />
+                                <label>Phone</label><br />
+                                <input class="form-control" type="text" name="phone_dangky" />
                             </div>
 
                             <div class="field">
-                                <label for="user_Mật khẩu">Password</label><br />
-                                <input autocomplete="off" class="form-control" type="password" name="password_dangky" id="" />
+                                <label>Address</label><br />
+                                <input class="form-control" type="text" name="address_dangky" />
                             </div>
 
                             <div class="field">
-                                <label for="user_Mật khẩu">Confirm Password</label><br />
-                                <input autocomplete="off" class="form-control" type="password" name="confirm_password_dangky" id="" />
+                                <label>Password</label><br />
+                                <input class="form-control" type="password" name="password_dangky" />
+                            </div>
+
+                            <div class="field">
+                                <label>Confirm Password</label><br />
+                                <input class="form-control" type="password" name="confirm_password_dangky" />
                             </div>
                             <br>
                             <div class="actions text-center">

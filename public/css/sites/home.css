@@ -134,3 +134,38 @@
 .item-food-new a,.item-drink-new a {
     font-family: Abril Fatface;
 }
+
+/*Infor-User*/
+
+.images-user {
+    height: 150px;
+    width: 150px;
+    margin-top: 28px;
+    box-shadow: 0px 5px 5px 2px #8e8b8b;
+
+}
+
+.title-infor {
+    font-family: Abril Fatface;
+    font-size: 18px;
+    border-bottom: 1px solid #e6dddd;
+    margin-top: 28px;
+}
+
+.fix-width-modal {
+    width: 820px;
+}
+
+.infor-box {
+    border-radius: 1px solid #333;
+}
+
+.content-infor-user {
+    background: #f1f1f1;
+    margin: 7px 27px;
+    border-radius: 21px;
+}
+
+.form-sign {
+        margin-top: 50px;
+}
