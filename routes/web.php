@@ -17,4 +17,5 @@ Route::get('/', function () {
 
 Route::group(['prefix' => 'sites', 'as' => 'sites.'], function () {
     Route::get('login','MyController@login');
+    Route::get('home','HomeController@home');
 });
