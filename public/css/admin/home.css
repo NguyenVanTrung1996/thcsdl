@@ -33,3 +33,23 @@ body {
     box-shadow: 0px 5px 5px -5px #001207;
 }
 
+.modal-title {
+	text-transform: uppercase;
+	font-family: Abril Fatface;
+	font-weight: 500;
+}
+
+.content-header {
+	text-transform: uppercase;
+	font-family: Abril Fatface;
+}
+
+.glyphicon-search {
+	margin-left: -21px;
+    margin-top: 8px;
+}
+
+.search {
+	width: 30%;
+    float: left;
+}

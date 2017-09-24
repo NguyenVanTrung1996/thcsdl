@@ -71,6 +71,12 @@ new Vue ({
 		},
 		create_new_drink:function(){
 			$('#create_new_drink').modal('show');
+		},
+		create_new_order:function(){
+			$('#create_new_order').modal('show');
+		},
+		show_oder_detail:function() {
+			$('#show_oder_detail').modal('show');
 		}
 
 	}

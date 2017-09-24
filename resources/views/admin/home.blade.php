@@ -372,6 +372,13 @@
                         <div class="box">
                             <div class="box-header">
                                 <div class="btn btn-3" v-on:click="create_new_user">Create New User</div>
+                                <br><br>
+                                <div class="form-group">
+                                    <div class="icon-addon addon-lg">
+                                        <input type="text" placeholder="Input Name User..." class="form-control search" id="search_user">
+                                        <label for="email" class="glyphicon glyphicon-search" rel="tooltip" title="email"></label>
+                                    </div>
+                                </div>
                             </div>
                             <div class="box-body">
                                 <table id="example2" class="table table-bordered table-hover">
@@ -579,7 +586,13 @@
                     <div class="col-xs-12">
                         <div class="box">
                             <div class="box-header">
-                                <div class="btn btn-3" v-on:click="create_new_food">Create New Food</div>
+                                <div class="btn btn-3" v-on:click="create_new_food">Create New Food</div><br><br>
+                                <div class="form-group">
+                                    <div class="icon-addon addon-lg">
+                                        <input type="text" placeholder="Input Name Food..." class="form-control search" id="search_food">
+                                        <label for="email" class="glyphicon glyphicon-search" rel="tooltip" title="email"></label>
+                                    </div>
+                                </div>
                             </div>
                             <div class="box-body">
                                 <table id="example2" class="table table-bordered table-hover">
@@ -789,7 +802,13 @@
                     <div class="col-xs-12">
                         <div class="box">
                             <div class="box-header">
-                                <div class="btn btn-3" v-on:click="create_new_drink">Create New Drink</div>
+                                <div class="btn btn-3" v-on:click="create_new_drink">Create New Drink</div><br><br>
+                                <div class="form-group">
+                                    <div class="icon-addon addon-lg">
+                                        <input type="text" placeholder="Input Name Drink..." class="form-control search" id="search_drink">
+                                        <label for="email" class="glyphicon glyphicon-search"></label>
+                                    </div>
+                                </div>
                             </div>
                             <div class="box-body">
                                 <table id="example2" class="table table-bordered table-hover">
@@ -999,7 +1018,13 @@
                     <div class="col-xs-12">
                         <div class="box">
                             <div class="box-header">
-                                <h3>List Oders</h3>
+                                <div class="btn btn-3" v-on:click="create_new_order">Create New Oder</div><br><br>
+                                <div class="form-group">
+                                    <div class="icon-addon addon-lg">
+                                        <input type="text" placeholder="Input Name User..." class="form-control search" id="search_order">
+                                        <label for="email" class="glyphicon glyphicon-search"></label>
+                                    </div>
+                                </div>
                             </div>
                             <div class="box-body">
                                 <table id="example2" class="table table-bordered table-hover">
@@ -1016,7 +1041,7 @@
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td class="text-center"><a href="javascript:void(0)" v-on:click="show_oder_detail">4572</a></td>
+                                            <td class="text-center"><a href="javascript:void(0)" v-on:click="show_oder_detail">#4572</a></td>
                                             <td class="text-center">Trung NV</td>
                                             <td class="text-center">0984010293</td>
                                             <td class="text-center">nguyenvantrung2015@gmail.com</td>
@@ -1027,7 +1052,7 @@
                                             </div></td>
                                         </tr>
                                         <tr>
-                                            <td class="text-center"><a href="javascript:void(0)" v-on:click="show_oder_detail">4573</a></td>
+                                            <td class="text-center"><a href="javascript:void(0)" v-on:click="show_oder_detail">#4573</a></td>
                                             <td class="text-center">Trung NV</td>
                                             <td class="text-center">0984010293</td>
                                             <td class="text-center">nguyenvantrung2015@gmail.com</td>
@@ -1349,6 +1374,40 @@
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                         <h4 class="modal-title">New Drink</h4>
+                    </div>
+                    <div class="modal-body">
+                         
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="create_new_order">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title">New Order</h4>
+                    </div>
+                    <div class="modal-body">
+                         
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="show_oder_detail">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title">Order Detail</h4>
                     </div>
                     <div class="modal-body">
                          
