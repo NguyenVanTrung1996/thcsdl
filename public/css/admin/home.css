@@ -1,0 +1,35 @@
+body {
+	font-family: Abril Fatface;
+}
+.btn-3 {
+    width: 100%;
+    background: #fbfbfb;
+    box-shadow: 0px 2px 0 #ffffff, 2px 4px 6px #b3b0b0;
+    font-weight: 900;
+    letter-spacing: 1px;
+    transition: all 150ms linear;
+    text-transform: uppercase;
+    font-size:19px;
+    font-family: Abril Fatface;
+}
+ 
+.btn-3:hover {
+  background: #c2c2c2;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 1px 1px 2px rgba(255, 255, 255, 0.2);
+  color: #fff;
+  text-decoration: none;
+  text-shadow: -1px -1px 0 #c2211c;
+  transition: all 250ms linear;
+}
+
+.panel-warning {
+	background: #faebcc;
+    box-shadow: 0px 5px 5px -5px #f20430;
+}
+
+.panel-success {
+	background: #bdf6c1;
+    box-shadow: 0px 5px 5px -5px #001207;
+}
+

@@ -35,7 +35,7 @@ new Vue ({
     },
     methods: {
         show_infor: function(){
-           $('#info').modal('show');
+           $('#show_infor').modal('show');
         },
         getdrink: function(){
             $('.food').hide();

@@ -19,3 +19,7 @@ Route::group(['prefix' => 'sites', 'as' => 'sites.'], function () {
     Route::get('login','MyController@login');
     Route::get('home','HomeController@home');
 });
+Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
+    Route::get('home','AdminController@home');
+    Route::get('product','ProductController@product');
+});

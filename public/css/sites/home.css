@@ -164,8 +164,20 @@
     background: #f1f1f1;
     margin: 7px 27px;
     border-radius: 21px;
+    box-shadow: 0px 5px 5px -5px #333;
+    border: 1px solid #dadada;
 }
 
 .form-sign {
-        margin-top: 50px;
+    margin-top: 50px;
+}
+
+.fix-width-images{
+    width: 200px;
+    height: 150px;
+}
+
+.modal-header {
+    font-family: Abril Fatface;
+    text-transform: uppercase;
 }
