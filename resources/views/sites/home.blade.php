@@ -161,43 +161,6 @@
             </div>
             <div class="col-md-9 fix-top-9 food">
                 <h1 class="text-center food-new-title"><span>Food Hot</span></h1>
-                <div class="col-md-12 food-new-content">
-                    <div class="owl-theme text-center" id="food-new-slide-1">
-                        <div class="item">
-                            <a href="#" title="">
-                                <img class="item food-new-slide-img" src="../images/g1.jpg" alt="">
-                            </a>
-                            <div>
-                                25$
-                            </div>
-                        </div>
-                        <div class="food-new-slide-div item">
-                            <a href="#" title=""><img class="item food-new-slide-img" src="../images/g2.jpg" alt=""></a>
-                        </div>
-                        <div class="food-new-slide-div item">
-                            <a href="#" title=""><img class="item food-new-slide-img" src="../images/g3.jpg" alt=""></a>
-                        </div>
-                        <div class="item">
-                            <a href="#" title=""><img class="item food-new-slide-img" src="../images/g4.jpg" alt=""></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-12 food-new-content">
-                    <div class="owl-theme text-center" id="food-new-slide-1">
-                        <div class="item"><a href="#" title="">
-                            <img class="item food-new-slide-img" src="../images/g5.jpg" alt="">
-                        </a></div>
-                        <div class="food-new-slide-div item">
-                            <a href="#" title=""><img class="item food-new-slide-img" src="../images/g6.jpg" alt=""></a>
-                        </div>
-                        <div class="food-new-slide-div item">
-                            <a href="#" title=""><img class="item food-new-slide-img" src="../images/g7.jpg" alt=""></a>
-                        </div>
-                        <div class="item">
-                            <a href="#" title=""><img class="item food-new-slide-img" src="../images/g8.jpg" alt=""></a>
-                        </div>
-                    </div>
-                </div>
                 <div class="col-md-12 item-food">
                     <div class="owl-theme text-center" id="item-food-1">
                         <a href="" title="">    
@@ -224,60 +187,11 @@
                         <a href="" title="">    
                             <img src="../images/g8.jpg" alt="" class="item fix-width-images">
                         </a> 
-                        <a href="" title="">    
-                            <img src="../images/g9.jpg" alt="" class="item fix-width-images">
-                        </a> 
-                        <a href="" title="">    
-                            <img src="../images/g10.jpg" alt="" class="item fix-width-images">
-                        </a> 
-                        <a href="" title="">    
-                            <img src="../images/g11.jpg" alt="" class="item fix-width-images">
-                        </a> 
-                        <a href="" title="">    
-                            <img src="../images/g12.jpg" alt="" class="item fix-width-images">
-                        </a> 
                     </div>
                 </div>
             </div>
             <div class="col-md-9 fix-top-9 drink">
-                <h1 class="text-center drink-new-title"><span>Drink Hot</span></h1>
-                <div class="col-md-12 drink-new-content">
-                    <div class="owl-theme text-center" id="drink-new-slide-1">
-                        <div class="item">
-                            <a href="#" title="">
-                                <img class="item drink-new-slide-img" src="../images/g1.jpg" alt="">
-                            </a>
-                            <div>
-                                25$
-                            </div>
-                        </div>
-                        <div class="drink-new-slide-div item">
-                            <a href="#" title=""><img class="item drink-new-slide-img" src="../images/g2.jpg" alt=""></a>
-                        </div>
-                        <div class="drink-new-slide-div item">
-                            <a href="#" title=""><img class="item drink-new-slide-img" src="../images/g3.jpg" alt=""></a>
-                        </div>
-                        <div class="item">
-                            <a href="#" title=""><img class="item drink-new-slide-img" src="../images/g4.jpg" alt=""></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-12 drink-new-content">
-                    <div class="owl-theme text-center" id="drink-new-slide-1">
-                        <div class="item"><a href="#" title="">
-                            <img class="item drink-new-slide-img" src="../images/g5.jpg" alt="">
-                        </a></div>
-                        <div class="drink-new-slide-div item">
-                            <a href="#" title=""><img class="item drink-new-slide-img" src="../images/g6.jpg" alt=""></a>
-                        </div>
-                        <div class="drink-new-slide-div item">
-                            <a href="#" title=""><img class="item drink-new-slide-img" src="../images/g7.jpg" alt=""></a>
-                        </div>
-                        <div class="item">
-                            <a href="#" title=""><img class="item drink-new-slide-img" src="../images/g8.jpg" alt=""></a>
-                        </div>
-                    </div>
-                </div>
+                <h1 class="text-center food-new-title"><span>Drink Hot</span></h1>
                 <div class="col-md-12 item-drink">
                     <div class="owl-theme text-center" id="item-drink-1">
                         <a href="" title="">    
@@ -304,20 +218,34 @@
                         <a href="" title="">    
                             <img src="../images/g8.jpg" alt="" class="item fix-width-images">
                         </a> 
-                        <a href="" title="">    
-                            <img src="../images/g9.jpg" alt="" class="item fix-width-images">
-                        </a> 
-                        <a href="" title="">    
-                            <img src="../images/g10.jpg" alt="" class="item fix-width-images">
-                        </a> 
-                        <a href="" title="">    
-                            <img src="../images/g11.jpg" alt="" class="item fix-width-images">
-                        </a> 
-                        <a href="" title="">    
-                            <img src="../images/g12.jpg" alt="" class="item fix-width-images">
-                        </a> 
                     </div>
                 </div>
+            </div>
+        </div>
+        <div class="row fix-top-list-food text-center food">
+             <div id="list-foods" class="owl-carousel">
+                    <a class="item" href=""><img src="../images/g1.jpg" class="fix-width-list-foods" alt=""></a>
+                    <a class="item" href=""><img src="../images/g2.jpg" class="fix-width-list-drinkss" alt=""></a>
+                    <a class="item" href=""><img src="../images/g3.jpg" class="fix-width-list-foods" alt=""></a>
+                     <a class="item" href=""><img src="../images/g4.jpg" class="fix-width-list-foods" alt=""></a>
+                    <a class="item" href=""><img src="../images/g5.jpg" class="fix-width-list-foods" alt=""></a>
+                    <a class="item" href=""><img src="../images/g6.jpg" class="fix-width-list-foods" alt=""></a>
+                     <a class="item" href=""><img src="../images/g7.jpg" class="fix-width-list-foods" alt=""></a>
+                    <a class="item" href=""><img src="../images/g8.jpg" class="fix-width-list-foods" alt=""></a>
+                    <a class="item" href=""><img src="../images/g9.jpg" class="fix-width-list-foods" alt=""></a>
+            </div>
+        </div>
+        <div class="row fix-top-list-drink text-center drink">
+            <div id="list-drinks" class="owl-carousel">
+                    <a class="item" href=""><img src="../images/g1.jpg" class="fix-width-list-drinks" alt=""></a>
+                    <a class="item" href=""><img src="../images/g2.jpg" class="fix-width-list-drinks" alt=""></a>
+                    <a class="item" href=""><img src="../images/g3.jpg" class="fix-width-list-drinks" alt=""></a>
+                     <a class="item" href=""><img src="../images/g4.jpg" class="fix-width-list-drinks" alt=""></a>
+                    <a class="item" href=""><img src="../images/g5.jpg" class="fix-width-list-drinks" alt=""></a>
+                    <a class="item" href=""><img src="../images/g6.jpg" class="fix-width-list-drinks" alt=""></a>
+                     <a class="item" href=""><img src="../images/g7.jpg" class="fix-width-list-drinks" alt=""></a>
+                    <a class="item" href=""><img src="../images/g8.jpg" class="fix-width-list-drinks" alt=""></a>
+                    <a class="item" href=""><img src="../images/g9.jpg" class="fix-width-list-drinks" alt=""></a>
             </div>
         </div>
     </div>
