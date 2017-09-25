@@ -64,6 +64,9 @@ new Vue ({
         edit_user:function(){
             $('.content').hide();
             $('#edit-infor-user').show();
+        },
+        show_product:function(){
+            $('#show_product').modal('show');
         }
     }
 
