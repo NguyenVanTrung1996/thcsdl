@@ -24,3 +24,11 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
     Route::get('home','AdminController@home');
     Route::get('product','ProductController@product');
 });
+Route::group(['prefix' => 'api/v1'], function () {
+    Route::get('customers','CustomerController@getdata_customer');
+    Route::get('foods','ProductController@getdata_food');
+    Route::get('drinks','ProductController@getdata_drink');
+    Route::get('delete_customer/{id}',function($id){
+    	return App\Customer::destroy($id);
+    });
+});

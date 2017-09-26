@@ -25,6 +25,7 @@
     "vue": "^2.4.4",
     "axios": "^0.16.2",
     "owl.carousel": "^2.2.1",
-    "admin-lte": "adminLTE#^2.4.0"
+    "admin-lte": "adminLTE#^2.4.0",
+    "toastr": "^2.1.3"
   }
 }

@@ -19,8 +19,9 @@ class CreateProductTable extends Migration
             $table->float('price');
             $table->string('describle');
             $table->integer('type');
-            $table->integer('status');
             $table->integer('pupular');
+            $table->string('avatar');
+            $table->integer('status');
             $table->rememberToken();
             $table->timestamps();
         });

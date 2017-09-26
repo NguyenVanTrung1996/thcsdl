@@ -39,6 +39,10 @@ body {
 	font-weight: 500;
 }
 
+.modal-dialog {
+    width: 820px;
+}
+
 .content-header {
 	text-transform: uppercase;
 	font-family: Abril Fatface;
@@ -51,5 +55,16 @@ body {
 
 .search {
 	width: 30%;
-    float: left;
+  float: left;
 }
+
+.btn-sign {
+  box-shadow: 1px 3px 5px -2px #464545;
+}
+
+#admin_new_user,#admin_new_food,#admin_new_drink {
+  padding: 15px;
+  border: 1px solid #e2e0e0;
+  box-shadow: 3px 5px 5px -3px #333;
+}
+

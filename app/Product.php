@@ -16,6 +16,7 @@ class Product extends Model
         'type',
         'status',
         'pupular',
+        'avatar',
     ];
     public function order_detail()
     {

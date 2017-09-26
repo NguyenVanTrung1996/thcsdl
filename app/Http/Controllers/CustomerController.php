@@ -10,9 +10,13 @@ use Illuminate\Http\Response;
 class CustomerController extends Controller
 {
     public function test(){
-    	// $data = DB::table('customers')->get();
-    	$data = response()->json(DB::table('customers')->get());
-    	dd($data);
-
+    	$customers = response()->json(DB::table('customers')->get());
+    	return view('admin.home', ['customers' => $customers]);
+    }
+    public function getdata_customer(){
+    	return Customer::all();
+    }
+    public function delete_customer(Request $req){
+    	return Customer::destroy($req);
     }
 }

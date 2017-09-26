@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="../bower/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
     <link rel="stylesheet" href="../bower/bootstrap-daterangepicker/daterangepicker.css">
     <link rel="stylesheet" href="../bower/admin-lte/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
+    <link rel="stylesheet" href="../bower/toastr/toastr.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
     <link rel="stylesheet" href="../css/admin/home.css">
 </head>
@@ -115,7 +116,7 @@
                 </ul>
             </section>
         </aside>
-        <div class="content-wrapper" id="users">
+        <div class="content-wrapper" id="dashboard">
             <section class="content-header">
                 <h1>
                     Manager User
@@ -355,7 +356,7 @@
             </aside>
             <div class="control-sidebar-bg"></div>
         </div>
-        <div class="content-wrapper" id="dashboard">
+        <div class="content-wrapper" id="users">
             <section class="content-header">
                 <h1>
                     Manager User
@@ -371,7 +372,7 @@
                     <div class="col-xs-12">
                         <div class="box">
                             <div class="box-header">
-                                <div class="btn btn-3" v-on:click="create_new_user">Create New User</div>
+                                <div class="btn btn-3" v-on:click="show_create_new_user">Create New User</div>
                                 <br><br>
                                 <div class="form-group">
                                     <div class="icon-addon addon-lg">
@@ -392,13 +393,13 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr>
-                                            <td>Trung</td>
-                                            <td>0123456789</td>
-                                            <td>nguyenvantrung2015@gmail.com</td>
-                                            <td>Phuong Mai, Dong Da, Ha Noi</td>
-                                            <td class="text-center"><a href="javascript:void(0)" v-on:click ="edit_user" title=""><i class="fa fa-pencil-square-o fa-2x" aria-hidden="true"></i></a></td>
-                                            <td class="text-center"><a href="javascript:void(0)" v-on:click="delete_user"><i class="fa fa-times fa-2x" aria-hidden="true"></i></a></td>
+                                        <tr v-for="customer in customers">
+                                            <td>@{{ customer.name }}</td>
+                                            <td>@{{ customer.phone}}</td>
+                                            <td>@{{ customer.email}}</td>
+                                            <td>@{{ customer.address}}</td>
+                                            <td class="text-center"><a href="javascript:void(0)" v-on:click ="confirm_edit_user" title=""><i class="fa fa-pencil-square-o fa-2x" aria-hidden="true"></i></a></td>
+                                            <td class="text-center"><a href="javascript:void(0)" v-on:click="confirm_delete_user(customer)"><i class="fa fa-times fa-2x" aria-hidden="true"></i></a></td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -600,21 +601,21 @@
                                         <tr>
                                             <th class="text-center">MSSP</th>
                                             <th class="text-center">Name</th>
-                                            <th class="text-center">Discription</th>
+                                            <th class="text-center">Describle</th>
                                             <th class="text-center">Price</th>
                                             <th class="text-center">Total</th>
                                             <th class="text-center" colspan="2">Action</th>
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr>
-                                            <td class="text-center">#1234</td>
-                                            <td class="text-center">Cherry</td>
-                                            <td class="text-center">Keo ngon nhat vinh bac bo !!!</td>
-                                            <td class="text-center">24$</td>
-                                            <td class="text-center">123</td>
-                                            <td class="text-center"><a href="javascript:void(0)" v-on:click="edit_food" title=""><i class="fa fa-pencil-square-o fa-2x" aria-hidden="true"></i></a></td>
-                                            <td class="text-center"><a href="javascript:void(0)" v-on:click="delete_food" title=""><i class="fa fa-times fa-2x" aria-hidden="true"></i></a></td>
+                                        <tr v-for="food in foods">
+                                            <td class="text-center">#@{{ food.id }}</td>
+                                            <td class="text-center">@{{ food.name }}</td>
+                                            <td class="text-center">@{{ food.describle }}</td>
+                                            <td class="text-center">@{{ food.price }}</td>
+                                            <td class="text-center">@{{ food.status }}</td>
+                                            <td class="text-center"><a href="javascript:void(0)" v-on:click="confirm_edit_food" title=""><i class="fa fa-pencil-square-o fa-2x" aria-hidden="true"></i></a></td>
+                                            <td class="text-center"><a href="javascript:void(0)" v-on:click="confirm_delete_food" title=""><i class="fa fa-times fa-2x" aria-hidden="true"></i></a></td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -823,14 +824,14 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr>
-                                            <td class="text-center">#1234</td>
-                                            <td class="text-center">Cherry</td>
-                                            <td class="text-center">Keo ngon nhat vinh bac bo !!!</td>
-                                            <td class="text-center">24$</td>
-                                            <td class="text-center">123</td>
-                                            <td class="text-center"><a href="javascript:void(0)" v-on:click="edit_drink" title=""><i class="fa fa-pencil-square-o fa-2x" aria-hidden="true"></i></a></td>
-                                            <td class="text-center"><a href="javascript:void(0)" v-on:click="delete_drink" title=""><i class="fa fa-times fa-2x" aria-hidden="true"></i></a></td>
+                                        <tr v-for="drink in drinks">
+                                            <td class="text-center">#@{{ drink.id }}</td>
+                                            <td class="text-center">@{{ drink.name }}</td>
+                                            <td class="text-center">@{{ drink.describle }}</td>
+                                            <td class="text-center">@{{ drink.price }}</td>
+                                            <td class="text-center">@{{ drink.status }}</td>
+                                            <td class="text-center"><a href="javascript:void(0)" v-on:click="confirm_edit_drink" title=""><i class="fa fa-pencil-square-o fa-2x" aria-hidden="true"></i></a></td>
+                                            <td class="text-center"><a href="javascript:void(0)" v-on:click="confirm_delete_drink" title=""><i class="fa fa-times fa-2x" aria-hidden="true"></i></a></td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -1051,17 +1052,6 @@
                                                 pending
                                             </div></td>
                                         </tr>
-                                        <tr>
-                                            <td class="text-center"><a href="javascript:void(0)" v-on:click="show_oder_detail">#4573</a></td>
-                                            <td class="text-center">Trung NV</td>
-                                            <td class="text-center">0984010293</td>
-                                            <td class="text-center">nguyenvantrung2015@gmail.com</td>
-                                            <td class="text-center">Phuong Mai-Dong Da-Ha Noi</td>
-                                            <td class="text-center">1000$</td>
-                                            <td class="text-center"><div class="panel panel-success">
-                                                finish
-                                            </div></td>
-                                        </tr>
                                     </tbody>
                                 </table>
                             </div>
@@ -1232,7 +1222,7 @@
             </aside>
             <div class="control-sidebar-bg"></div>
         </div>
-        <div class="modal fade" id="edit_user">
+        <div class="modal fade" id="confirm_edit_user">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -1249,7 +1239,7 @@
                 </div>
             </div>
         </div>
-        <div class="modal fade" id="delete_user">
+        <div class="modal fade" id="confirm_delete_user">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -1257,16 +1247,16 @@
                         <h4 class="modal-title">Delete User</h4>
                     </div>
                     <div class="modal-body">
-                        Ban co chac chan muon xoa user khong ? 
+                        Ban co chac chan muon xoa user @{{ delete_user_item.name }} khong ? 
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">No</button>
-                        <button type="button" class="btn btn-primary">Yes</button>
+                        <button type="button" class="btn btn-primary"
+                        v-on:click="delete_user(delete_user_item.id)" data-dismiss="modal">Yes</button>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="modal fade" id="edit_food">
+        <div class="modal fade" id="confirm_edit_food">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -1283,7 +1273,7 @@
                 </div>
             </div>
         </div>
-        <div class="modal fade" id="delete_food">
+        <div class="modal fade" id="confirm_delete_food">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -1300,7 +1290,7 @@
                 </div>
             </div>
         </div>
-        <div class="modal fade" id="edit_drink">
+        <div class="modal fade" id="confirm_edit_drink">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -1317,7 +1307,7 @@
                 </div>
             </div>
         </div>
-        <div class="modal fade" id="delete_drink">
+        <div class="modal fade" id="confirm_delete_drink">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -1334,7 +1324,7 @@
                 </div>
             </div>
         </div>
-        <div class="modal fade" id="create_new_user">
+        <div class="modal fade" id="show_create_new_user">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -1342,7 +1332,46 @@
                         <h4 class="modal-title">New User</h4>
                     </div>
                     <div class="modal-body">
-                         
+                    <div id="admin_new_user" >
+                        <form class="new_user" action="" accept-charset="UTF-8" method="post">
+                            <div class="field">
+                                <label>Email</label><br />
+                                <input class="form-control" type="email" value="" name="email_dangky" id="" />
+                            </div>
+
+                            <div class="field">
+                                <label>Phone</label><br />
+                                <input class="form-control" type="text" value="" name="phone_dangky" id=""/>
+                            </div>
+
+                            <div class="field">
+                                <label>Birthday</label><br />
+                                <input class="form-control" type="date" value="" name="phone_dangky" id=""/>
+                            </div>
+
+                            <div class="field">
+                                <label>Sex</label><br/>
+                                <label class="radio-inline"><input type="radio" name="optradio" value="male">Male</label>
+                                <label class="radio-inline"><input type="radio" name="optradio" value="female">Female</label>
+                            </div>
+
+                            <div class="field">
+                                <label>Avatar</label><br />
+                                <input class="form-control" type="file"/>
+                            </div>
+
+                            <div class="field">
+                                <label>Password</label><br />
+                                <input class="form-control" type="password" name="password_dangky" id="" />
+                            </div>
+                            <div class="field">
+                                <label>Confirm Password</label><br />
+                                <input class="form-control" type="password" name="confirm_password_dangky" id="" />
+                            </div>
+                            <br>
+                        </form> 
+                    </div>
+                       
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -1359,11 +1388,38 @@
                         <h4 class="modal-title">New Food</h4>
                     </div>
                     <div class="modal-body">
-                         
+                         <div id="admin_new_food">
+                             <form action="" method="POST" role="form">
+                                <div class="form-group">
+                                    <label for="">Name Food</label>
+                                    <input type="text" class="form-control" id="" placeholder="Input field">
+                                </div>
+                                <div class="form-group">
+                                    <label for="">Describle</label>
+                                    <input type="text" class="form-control" id="" placeholder="Input field">
+                                </div>
+                                <div class="form-group">
+                                    <label for="">Avatar</label>
+                                    <input type="text" class="form-control" id="" placeholder="Input field">
+                                </div>
+                                <div class="form-group">
+                                    <label for="">Price</label>
+                                    <input type="text" class="form-control" id="" placeholder="Input field">
+                                </div>
+                                <div class="form-group">
+                                    <label for="">Total</label>
+                                    <input type="text" class="form-control" id="" placeholder="Input field">
+                                </div>
+                                <div class="form-group">
+                                    <label for="">Papular</label>
+                                    <input type="text" class="form-control" id="" placeholder="Input field">
+                                </div>
+                                <button type="submit" class="btn btn-primary">Create</button>
+                             </form>
+                         </div>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save</button>
                     </div>
                 </div>
             </div>
@@ -1376,7 +1432,35 @@
                         <h4 class="modal-title">New Drink</h4>
                     </div>
                     <div class="modal-body">
-                         
+                          <div id="admin_new_drink">
+                            <form action="" method="POST" role="form">
+                                <div class="form-group">
+                                    <label for="">Name Drink</label>
+                                    <input type="text" class="form-control" id="" placeholder="Input field">
+                                </div>
+                                <div class="form-group">
+                                    <label for="">Describle</label>
+                                    <input type="text" class="form-control" id="" placeholder="Input field">
+                                </div>
+                                <div class="form-group">
+                                    <label for="">Avatar</label>
+                                    <input type="text" class="form-control" id="" placeholder="Input field">
+                                </div>
+                                <div class="form-group">
+                                    <label for="">Price</label>
+                                    <input type="text" class="form-control" id="" placeholder="Input field">
+                                </div>
+                                <div class="form-group">
+                                    <label for="">Total</label>
+                                    <input type="text" class="form-control" id="" placeholder="Input field">
+                                </div>
+                                <div class="form-group">
+                                    <label for="">Papular</label>
+                                    <input type="text" class="form-control" id="" placeholder="Input field">
+                                </div>
+                                <button type="submit" class="btn btn-primary">Create</button>
+                            </form>
+                         </div>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -1421,6 +1505,7 @@
         </div>
     </div>
     <script src="../bower/vue/dist/vue.js"></script>    
+    <script src="../bower/axios/dist/axios.min.js"></script>    
     <script src="../bower/jquery/dist/jquery.min.js"></script>
     <script src="../bower/jquery/dist/jquery.min.js"></script>
     <script src="../bower/jquery-ui/jquery-ui.min.js"></script>
@@ -1439,6 +1524,7 @@
     <script src="../bower/fastclick/lib/fastclick.js"></script>
     <script src="../bower/admin-lte/dist/js/adminlte.min.js"></script>
     <script src="../bower/admin-lte/dist/js/demo.js"></script>
+    <script src="../bower/toastr/toastr.min.js"></script>
     <script src="../bower/bootstrap/dist/js/bootstrap.min.js" type="text/javascript" charset="utf-8" async defer></script>
     <script src="../js/admin/home.js"></script>
 </body>
