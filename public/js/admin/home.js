@@ -5,6 +5,8 @@ new Vue ({
 		foods:[],
 		drinks:[],
 		delete_user_item: {'id':'','name':'',},
+		delete_food_item: {'id':'','name':'',},
+		delete_drink_item: {'id':'','name':'',},
 	},
 	mounted: function(){
 		$('#dashboard').show();
@@ -94,14 +96,16 @@ new Vue ({
 		confirm_edit_food:function() {
 			$('#confirm_edit_food').modal('show');
 		},
-		confirm_delete_food:function(){
+		confirm_delete_food:function(item){
 			$('#confirm_delete_food').modal('show');
+			this.delete_food_item = item;
 		},
 		confirm_edit_drink:function() {
 			$('#confirm_edit_drink').modal('show');
 		},
-		confirm_delete_drink:function(){
+		confirm_delete_drink:function(item){
 			$('#confirm_delete_drink').modal('show');
+			this.delete_drink_item = item;
 		},
 		show_create_new_user:function(){
 			$('#show_create_new_user').modal('show');
@@ -125,12 +129,38 @@ new Vue ({
                 json: true,
             }
             axios(authOptions).then(response => {
-            	toastr.success('Delete user Success', 'Success', {timeOut: 5000});
+            	toastr.success('Delete user success', 'Success', {timeOut: 20});
             }).catch((error) => {
-                    toastr.error('Delete user Error', 'Error', {timeOut: 5000});
+                    toastr.error('Delete user error', 'Error', {timeOut: 20});
             });
             this.show_customer();
-		}
+		},
+		delete_food:function(id){
+			var authOptions = {
+                method: 'get',
+                url: '/api/v1/delete_food/'+ id,
+                json: true,
+            }
+            axios(authOptions).then(response => {
+            	toastr.success('Delete food success', 'Success', {timeOut: 100});
+            }).catch((error) => {
+                    toastr.error('Delete food error', 'Error', {timeOut: 100});
+            });
+            this.show_list_food();
+		},
+		delete_drink:function(id){
+			var authOptions = {
+                method: 'get',
+                url: '/api/v1/delete_drink/'+ id,
+                json: true,
+            }
+            axios(authOptions).then(response => {
+            	toastr.success('Delete drink success', 'Success', {timeOut: 100});
+            }).catch((error) => {
+                    toastr.error('Delete drink error', 'Error', {timeOut: 100});
+            });
+            this.show_list_drink();
+		},
 
 	}
 

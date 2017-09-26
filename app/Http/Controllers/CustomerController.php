@@ -16,7 +16,7 @@ class CustomerController extends Controller
     public function getdata_customer(){
     	return Customer::all();
     }
-    public function delete_customer(Request $req){
-    	return Customer::destroy($req);
-    }
+    // public function delete_customer(Request $req){
+    // 	return Customer::destroy($req);
+    // }
 }

@@ -615,7 +615,7 @@
                                             <td class="text-center">@{{ food.price }}</td>
                                             <td class="text-center">@{{ food.status }}</td>
                                             <td class="text-center"><a href="javascript:void(0)" v-on:click="confirm_edit_food" title=""><i class="fa fa-pencil-square-o fa-2x" aria-hidden="true"></i></a></td>
-                                            <td class="text-center"><a href="javascript:void(0)" v-on:click="confirm_delete_food" title=""><i class="fa fa-times fa-2x" aria-hidden="true"></i></a></td>
+                                            <td class="text-center"><a href="javascript:void(0)" v-on:click="confirm_delete_food(food)" title=""><i class="fa fa-times fa-2x" aria-hidden="true"></i></a></td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -831,7 +831,7 @@
                                             <td class="text-center">@{{ drink.price }}</td>
                                             <td class="text-center">@{{ drink.status }}</td>
                                             <td class="text-center"><a href="javascript:void(0)" v-on:click="confirm_edit_drink" title=""><i class="fa fa-pencil-square-o fa-2x" aria-hidden="true"></i></a></td>
-                                            <td class="text-center"><a href="javascript:void(0)" v-on:click="confirm_delete_drink" title=""><i class="fa fa-times fa-2x" aria-hidden="true"></i></a></td>
+                                            <td class="text-center"><a href="javascript:void(0)" v-on:click="confirm_delete_drink(drink)" title=""><i class="fa fa-times fa-2x" aria-hidden="true"></i></a></td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -1281,11 +1281,11 @@
                         <h4 class="modal-title">Delete Food</h4>
                     </div>
                     <div class="modal-body">
-                        Ban co chac chan muon xoa food nay khong ? 
+                        Ban co chac chan muon xoa @{{ delete_food_item.name }} nay khong ? 
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal">No</button>
-                        <button type="button" class="btn btn-primary">Yes</button>
+                        <button type="button" class="btn btn-primary" v-on:click="delete_food(delete_food_item.id)" data-dismiss="modal">Yes</button>
                     </div>
                 </div>
             </div>
@@ -1315,11 +1315,11 @@
                         <h4 class="modal-title">Delete drink</h4>
                     </div>
                     <div class="modal-body">
-                        Ban co chac chan muon xoa drink nay khong ? 
+                        Ban co chac chan muon xoa @{{ delete_drink_item.name}} nay khong ? 
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal">No</button>
-                        <button type="button" class="btn btn-primary">Yes</button>
+                        <button type="button" class="btn btn-primary" data-dismiss="modal" v-on:click="delete_drink(delete_drink_item.id)">Yes</button>
                     </div>
                 </div>
             </div>
