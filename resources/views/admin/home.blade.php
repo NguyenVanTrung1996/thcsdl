@@ -42,7 +42,7 @@
                     <div class="col-xs-12">
                         <div class="box">
                             <div class="box-header">
-                                <h1 class="create-new btn"> Create User</h1>
+                                <h1 class="create-new btn btn-3"> Create User</h1>
                             </div>
                             <div class="box-body">
                                 <table id="example2" class="table table-bordered table-hover">
@@ -58,38 +58,6 @@
                                     <tbody>
                                         <tr>
                                             <td>Trung</td>
-                                            <td>0123456789</td>
-                                            <td>nguyenvantrung2015@gmail.com</td>
-                                            <td>Phuong Mai, Dong Da, Ha Noi</td>
-                                            <td class="text-center"><a href="" title="">Edit</a></td>
-                                            <td class="text-center"><a href="" title="">Delete</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td>Dinh Manh</td>
-                                            <td>0123456789</td>
-                                            <td>nguyenvantrung2015@gmail.com</td>
-                                            <td>Phuong Mai, Dong Da, Ha Noi</td>
-                                            <td class="text-center"><a href="" title="">Edit</a></td>
-                                            <td class="text-center"><a href="" title="">Delete</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td>Tuan Anh</td>
-                                            <td>0123456789</td>
-                                            <td>nguyenvantrung2015@gmail.com</td>
-                                            <td>Phuong Mai, Dong Da, Ha Noi</td>
-                                            <td class="text-center"><a href="" title="">Edit</a></td>
-                                            <td class="text-center"><a href="" title="">Delete</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td>Thuy</td>
-                                            <td>0123456789</td>
-                                            <td>nguyenvantrung2015@gmail.com</td>
-                                            <td>Phuong Mai, Dong Da, Ha Noi</td>
-                                            <td class="text-center"><a href="" title="">Edit</a></td>
-                                            <td class="text-center"><a href="" title="">Delete</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td>Manh</td>
                                             <td>0123456789</td>
                                             <td>nguyenvantrung2015@gmail.com</td>
                                             <td>Phuong Mai, Dong Da, Ha Noi</td>
