@@ -14,16 +14,10 @@
             <div class="col-xs-12">
                 <div class="box">
                     <div class="box-header">
-                        <div class="btn btn-3" v-on:click="create_new_food">Create New Food</div><br><br>
-                        <div class="form-group">
-                            <div class="icon-addon addon-lg">
-                                <input type="text" placeholder="Input Name Food..." class="form-control search" id="search_food">
-                                <label for="email" class="glyphicon glyphicon-search" rel="tooltip" title="email"></label>
-                            </div>
-                        </div>
+                        <div class="btn btn-3" v-on:click="create_new_food">Create New Food</div><br>
                     </div>
                     <div class="box-body">
-                        <table id="example2" class="table table-bordered table-hover">
+                        <table id="example_food" class="table table-bordered table-hover">
                             <thead>
                                 <tr>
                                     <th class="text-center">MSSP</th>
@@ -31,7 +25,8 @@
                                     <th class="text-center">Describle</th>
                                     <th class="text-center">Price</th>
                                     <th class="text-center">Total</th>
-                                    <th class="text-center" colspan="2">Action</th>
+                                    <th class="text-center">Edit</th>
+                                    <th class="text-center">Delete</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -257,30 +252,31 @@
             </div>
             <div class="modal-body">
                 <div id="admin_new_food">
-                    <form action="" method="POST" role="form">
+                    <form action="http://localhost:8000/api/v1/add_product" method="post" role="form" v-on:submit.prevent="createItem_food">
+                    {{ csrf_field() }}
                         <div class="form-group">
-                            <label for="">Name Food</label>
-                            <input type="text" class="form-control" id="" placeholder="Input field">
+                            <label >Name Food</label>
+                            <input v-model = "new_food.name" type="text" name = "name" class="form-control">
                         </div>
                         <div class="form-group">
-                            <label for="">Describle</label>
-                            <input type="text" class="form-control" id="" placeholder="Input field">
+                            <label >Describle</label>
+                            <input  v-model = "new_food.describle" type="text" name = "describle" class="form-control" >
                         </div>
                         <div class="form-group">
-                            <label for="">Avatar</label>
-                            <input type="text" class="form-control" id="" placeholder="Input field">
+                            <label >Avatar</label>
+                            <input  id= "image_file" type="file" name = "avatar"  class="form-control">
                         </div>
                         <div class="form-group">
-                            <label for="">Price</label>
-                            <input type="text" class="form-control" id="" placeholder="Input field">
+                            <label >Price</label>
+                            <input  v-model = "new_food.price" type="number" step="0.01" name = "price" class="form-control">
                         </div>
                         <div class="form-group">
-                            <label for="">Total</label>
-                            <input type="text" class="form-control" id="" placeholder="Input field">
+                            <label >Total</label>
+                            <input  v-model = "new_food.status" type="number" name = "status" class="form-control" >
                         </div>
                         <div class="form-group">
-                            <label for="">Papular</label>
-                            <input type="text" class="form-control" id="" placeholder="Input field">
+                            <label >Papular</label>
+                            <input  v-model = "new_food.pupular" type="number" name = "pupular" class="form-control">
                         </div>
                         <button type="submit" class="btn btn-primary">Create</button>
                     </form>

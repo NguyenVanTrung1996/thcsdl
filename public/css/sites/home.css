@@ -279,7 +279,7 @@
     font-family: abril fatface;
 }
 
-.item-food {
+.item-food,.item-drink {
     background: #ebf2f1;
     padding-bottom: 15px;
     border-radius: 1%;
@@ -322,6 +322,7 @@
 
 .discrible {
     font-family: Abril Fatface;
+    height: 80px;
 }
 
 .number_show {

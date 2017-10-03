@@ -47,23 +47,23 @@
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h3 class="name_product_show">Masala Omlem</h3>
+                <h3 class="name_product_show">@{{ product.name }}</h3>
             </div>
             <div class="modal-body">
                 <div class="row">
                     <div class="col-md-6">
-                        <img src="../images/g1.jpg" alt="" class="fix-size-product">
+                        <img v-bind:src="'../images/'+ product.avatar" alt="" class="fix-size-product">
                     </div>
                     <div class="col-md-6">
-                        <p class="discrible">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque accusantium, hic! Repudiandae aliquam quas nobis nam, eos saepe dignissimos earum aliquid minus, accusamus adipisci vel expedita, deleniti fugiat id tempore.</p>
+                        <p class="discrible">@{{ product.describle }}</p>
                         <div class="price_show">
                             <span>Price </span>
-                            <span>: $24</span>
+                            <span>: $@{{ product.price }}</span>
                         </div><br>
                         <div class="status_show">
                             <span>Availability : </span>
                             <span>in stock </span>
-                            <span>20(items)</span>
+                            <span>@{{ product.status }}(items)</span>
                         </div><br>
                         <div class="number_show">
                             <span>Quautity : </span>

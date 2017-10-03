@@ -5,18 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Manager</title>
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-    <link rel="stylesheet" href="../bower/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../bower/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../bower/Ionicons/css/ionicons.min.css">
     <link rel="stylesheet" href="../bower/admin-lte/dist/css/AdminLTE.min.css">
     <link rel="stylesheet" href="../bower/admin-lte/dist/css/skins/_all-skins.min.css">
     <link rel="stylesheet" href="../bower/morris.js/morris.css">
     <link rel="stylesheet" href="../bower/jvectormap/jquery-jvectormap.css">
     <link rel="stylesheet" href="../bower/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
     <link rel="stylesheet" href="../bower/bootstrap-daterangepicker/daterangepicker.css">
-    <link rel="stylesheet" href="../bower/admin-lte/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
     <link rel="stylesheet" href="../bower/toastr/toastr.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+    {{-- Table --}}
+    <link rel="stylesheet" href="../bower/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../bower/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../bower/Ionicons/css/ionicons.min.css">
+    <link rel="stylesheet" href="../bower/datatables.net-bs/css/dataTables.bootstrap.min.css">
+    <link rel="stylesheet" href="../bower/admin-lte/dist/css/AdminLTE.min.css">
+    <link rel="stylesheet" href="../bower/admin-lte/dist/css/skins/_all-skins.min.css">
+    <link rel="stylesheet" href="../bower/admin-lte/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
     <link rel="stylesheet" href="../css/admin/home.css">
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
@@ -238,7 +242,6 @@
     <script src="../bower/vue/dist/vue.js"></script>    
     <script src="../bower/axios/dist/axios.min.js"></script>    
     <script src="../bower/jquery/dist/jquery.min.js"></script>
-    <script src="../bower/jquery/dist/jquery.min.js"></script>
     <script src="../bower/jquery-ui/jquery-ui.min.js"></script>
     <script src="../bower/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="../bower/raphael/raphael.min.js"></script>
@@ -251,12 +254,40 @@
     <script src="../bower/bootstrap-daterangepicker/daterangepicker.js"></script>
     <script src="../bower/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
     <script src="../bower/admin-lte/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js"></script>
+    <script src="../bower/admin-lte/dist/js/adminlte.min.js"></script>
+    <script src="../bower/admin-lte/dist/js/demo.js"></script>
+    <script src="../bower/toastr/toastr.min.js"></script>
+  {{--   table --}}
+
+    <script src="../bower/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../bower/datatables.net/js/jquery.dataTables.min.js"></script>
+    <script src="../bower/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
     <script src="../bower/jquery-slimscroll/jquery.slimscroll.min.js"></script>
     <script src="../bower/fastclick/lib/fastclick.js"></script>
     <script src="../bower/admin-lte/dist/js/adminlte.min.js"></script>
     <script src="../bower/admin-lte/dist/js/demo.js"></script>
-    <script src="../bower/toastr/toastr.min.js"></script>
-    <script src="../bower/bootstrap/dist/js/bootstrap.min.js" type="text/javascript" charset="utf-8" async defer></script>
     <script src="../js/admin/home.js"></script>
+    <script>
+        $(function () {
+        $('#example_food').DataTable(
+          {'paging'      : true,
+          'lengthChange': true,
+          'searching'   : true,
+          'ordering'    : false,
+          'info'        : false,
+          'autoWidth'   : true});
+        $('#example_drink').DataTable({
+          'paging'      : true,
+          'lengthChange': true,
+          'searching'   : true,
+          'ordering'    : true,
+          'info'        : false,
+          'autoWidth'   : true
+        })
+      })
+    </script>
 </body>
 </html>
+
+
+

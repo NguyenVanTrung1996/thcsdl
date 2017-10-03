@@ -259,17 +259,17 @@
                     <form class="new_user" action="" accept-charset="UTF-8" method="post">
                         <div class="field">
                             <label>Email</label><br />
-                            <input class="form-control" type="email" value="" name="email_dangky" id="" />
+                            <input class="form-control" type="email" name="email"/>
                         </div>
 
                         <div class="field">
                             <label>Phone</label><br />
-                            <input class="form-control" type="text" value="" name="phone_dangky" id=""/>
+                            <input class="form-control" type="text" name="phone"/>
                         </div>
 
                         <div class="field">
                             <label>Birthday</label><br />
-                            <input class="form-control" type="date" value="" name="phone_dangky" id=""/>
+                            <input class="form-control" type="date" name="birthday"/>
                         </div>
 
                         <div class="field">
@@ -280,7 +280,7 @@
 
                         <div class="field">
                             <label>Avatar</label><br />
-                            <input class="form-control" type="file"/>
+                            <input class="form-control" name = "avatar" type="file"/>
                         </div>
 
                         <div class="field">

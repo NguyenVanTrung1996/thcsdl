@@ -7,6 +7,8 @@ new Vue ({
 		delete_user_item: {'id':'','name':'',},
 		delete_food_item: {'id':'','name':'',},
 		delete_drink_item: {'id':'','name':'',},
+		new_food:{'name':'','price':'','describle':'','pupular':'','avatar':'','status':'',},
+		new_drink:{'name':'','price':'','describle':'','pupular':'','avatar':'','status':'',},
 	},
 	mounted: function(){
 		$('#dashboard').show();
@@ -160,6 +162,53 @@ new Vue ({
                     toastr.error('Delete drink error', 'Error', {timeOut: 100});
             });
             this.show_list_drink();
+		},
+		createItem_food:function(){
+			this.new_food['avatar'] = $('#image_file').val().split('\\').pop();
+			console.log(this.new_food['avatar']);
+            var input = this.new_food;
+            var authOptions = {
+                    method: 'POST',
+                    url: '/api/v1/add_product_food',
+                    params: input,
+                    json: true
+                }
+
+            axios(authOptions).then((response) => {
+                this.new_food ={'name':'','price':'','describle':'','pupular':'','avatar':'','status':'',};
+                toastr.success('Add food success', 'Success', {timeOut: 100});
+            }).catch((error) => {
+                    toastr.error('Add food error', 'Error', {timeOut: 100});
+            });
+            $('#dashboard').hide();
+			$('#foods').show();
+			$('#users').hide();
+			$('#drinks').hide();
+			$('#oders').hide();
+			this.show_list_food();
+		},
+		createItem_drink:function(){
+			this.new_drink['avatar'] = $('#image_drink').val().split('\\').pop();
+            var input = this.new_drink;
+            var authOptions = {
+                    method: 'POST',
+                    url: '/api/v1/add_product_drink',
+                    params: input,
+                    json: true
+                }
+
+            axios(authOptions).then((response) => {
+                this.new_food ={'name':'','price':'','describle':'','pupular':'','avatar':'','status':'',};
+                toastr.success('Add drink success', 'Success', {timeOut: 100});
+            }).catch((error) => {
+                    toastr.error('Add drink error', 'Error', {timeOut: 100});
+            });
+            $('#dashboard').hide();
+			$('#foods').hide();
+			$('#users').hide();
+			$('#drinks').show();
+			$('#oders').hide();
+			this.show_list_drink();
 		},
 
 	}
